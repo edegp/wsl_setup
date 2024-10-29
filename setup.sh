@@ -31,6 +31,7 @@ open gcm-win-x86-2.6.0.exe
 git config --global credential.helper "/mnt/c/Program\ Files\ \(x86\)/Git\ Credential\ Manager/git-credential-manager.exe"
 # For Azure DevOps support only
 git config --global credential.https://dev.azure.com.useHttpPath true
+git config --global fetch.prune true
 
-% SETX WSLENV %WSLENV%:GIT_EXEC_PATH/wp
-% wsl --shutdown
+cmd.exe SETX WSLENV %WSLENV%:GIT_EXEC_PATH/wp
+cmd.exe wsl --shutdown
